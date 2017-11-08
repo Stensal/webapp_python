@@ -196,7 +196,6 @@ stensalio () {
 
            "
     runCmd "make VERBOSE=1"
-    runCmd "make install"
 }
 
 cattleshed () {
