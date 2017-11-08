@@ -25,3 +25,6 @@
 [submodule "boost"]
 	path = boost
 	url = git@github.com:Stensal/boost.git
+[submodule "zlib"]
+	path = zlib
+	url = git@github.com:Stensal/zlib.git
