@@ -1,0 +1,3 @@
+[submodule "ttyd"]
+	path = ttyd
+	url = git@github.com:Stensal/ttyd.git
