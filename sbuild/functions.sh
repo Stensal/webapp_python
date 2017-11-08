@@ -22,7 +22,7 @@ boost() {
     echo "$TOPDIR"
     runCmd "cd ${TOPDIR}/boost"
     runCmd "./bootstrap.sh --prefix=$ASSEMBLY_LINE --without-icu"
-    runCmd "./b2"
+    runCmd "./b2 link=static"
     runCmd "./b2 install"
 }
 
