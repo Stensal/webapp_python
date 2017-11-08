@@ -8,4 +8,6 @@ RUN apt-get install -y nginx-full \
 RUN apt-get install -y build-essential cmake
 
 RUN apt-get install -y git automake
-RUN apt-get install -y automake libtool zlib1g-dev
+RUN apt-get install -y automake libtool zlib1g-dev \
+                       libssh-gcrypt-dev \
+                       python
