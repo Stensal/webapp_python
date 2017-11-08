@@ -15,3 +15,5 @@ ${mypath}/sbuild.sh boost \
 && ${mypath}/sbuild.sh curl \
 && ${mypath}/sbuild.sh sqlite3 \
 && ${mypath}/sbuild.sh cppcms 
+
+rm ${mypath}/../build/assembly_line/lib/libboost_*.so
