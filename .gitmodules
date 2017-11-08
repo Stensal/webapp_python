@@ -1,3 +1,27 @@
 [submodule "ttyd"]
 	path = ttyd
 	url = git@github.com:Stensal/ttyd.git
+[submodule "cppcms"]
+	path = cppcms
+	url = git@github.com:Stensal/cppcms.git
+[submodule "sqlite3"]
+	path = sqlite3
+	url = git@github.com:Stensal/sqlite3.git
+[submodule "pcre"]
+	path = pcre
+	url = git@github.com:Stensal/pcre.git
+[submodule "curl"]
+	path = curl
+	url = git@github.com:Stensal/curl.git
+[submodule "cppdb"]
+	path = cppdb
+	url = git@github.com:Stensal/cppdb.git
+[submodule "libcap"]
+	path = libcap
+	url = git@github.com:Stensal/libcap.git
+[submodule "stensalio"]
+	path = stensalio
+	url = git@github.com:Stensal/stensalio.git
+[submodule "boost"]
+	path = boost
+	url = git@github.com:Stensal/boost.git
