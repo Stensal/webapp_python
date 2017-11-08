@@ -8,6 +8,10 @@ for i in pcre sqlite3; do
 done
 
 ${mypath}/sbuild.sh boost \
+&& ${mypath}/sbuild.sh libcap \
 && ${mypath}/sbuild.sh pcre \
 && ${mypath}/sbuild.sh sqlite3 \
-&& ${mypath}/sbuild.sh libcap 
+&& ${mypath}/sbuild.sh cppdb \
+&& ${mypath}/sbuild.sh curl \
+&& ${mypath}/sbuild.sh sqlite3 \
+&& ${mypath}/sbuild.sh cppcms 
