@@ -9,6 +9,6 @@ RUN apt-get install -y build-essential cmake
 
 RUN apt-get install -y git automake
 RUN apt-get install -y automake libtool zlib1g-dev \
-                       libssh-gcrypt-dev \
+                       libssh-gcrypt-dev libssl-dev \
                        python libpython2.7-dev libbz2-dev \
                        vim libcap-dev
