@@ -17,3 +17,6 @@ ${mypath}/sbuild.sh boost \
 && ${mypath}/sbuild.sh cppcms 
 
 rm ${mypath}/../build/assembly_line/lib/libboost_*.so
+
+${mypath}/sbuild.sh cattleshed
+${mypath}/sbuild.sh stensalio
