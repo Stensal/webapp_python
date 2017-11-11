@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  cattleshed:
+     build: ../cattleshed/docker
+     command: /bin/bash
+     volumes:
+       - "cattleshed_workspace:/home/sbuilder/workspace"
+     ports:
+       - "2012:2012"
+     networks:
+       - back-tier
+
+  stensalio:
+     build: ../stensalio/docker
+     depends_on:
+       - "cattleshed"
+     ports:
+       - "443:443"
+       - "80:80"
+     networks:
+        - back-tier
+     command: ["/usr/bin/wait-for-it.sh", "cattleshed:2012", "/bin/bash"]
+
+volumes:
+  cattleshed_workspace:
+
+networks:
+  back-tier:
+  front-tier:
