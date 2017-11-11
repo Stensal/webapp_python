@@ -4,7 +4,7 @@ mypath=$(dirname $(readlink -f $0))
 cd ${mypath}/../
 for i in pcre sqlite3; do
    pushd $i
-   autoreconf -ivf
+   #autoreconf -ivf
    popd
 done
 
