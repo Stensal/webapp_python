@@ -16,6 +16,7 @@ services:
      command: /bin/bash
      volumes:
        - "cattleshed_workspace:/home/sbuilder/workspace"
+       - "cattleshed_var_log:/var/log"
      network_mode: "host"
      tmpfs:
        - /tmp
@@ -25,6 +26,7 @@ services:
      volumes:
        - "stensalio_data:/data"
        - "stensalio_public_json:/var/www/public_json"
+       - "stensalio_var_log:/var/log"
      network_mode: "host"
      tmpfs:
        - /tmp
@@ -34,5 +36,7 @@ services:
 
 volumes:
   cattleshed_workspace:
+  cattleshed_var_log:
   stensalio_data:
   stensalio_public_json:
+  stensalio_var_log:
