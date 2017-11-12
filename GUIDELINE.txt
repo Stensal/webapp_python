@@ -45,7 +45,7 @@ staging, production)
 
 *Testing*
 
-1. All critical functionalities need to be 100% covered by
+1. All in-house developed functionalities need to be 100% covered by
 automated regression test.
 
 2. Test coverage reports should be generated for each release.  gcov
@@ -57,7 +57,7 @@ https://xdebug.org/docs/code_coverage
 1. Any code you written should be profilable.
 
 2. Any tech stack/dependencies you choose should be profilable. If
-not, please raise this issue to your supervisor.
+not, please seek approval from your supervisor.
 
 3. Performance profiling should be part of the release.
 
