@@ -16,4 +16,4 @@ cd ${mypath}/../stensalio/docker
 ./get_bin.sh ${mypath}/../build/stage-stensalio
 
 cd ${mypath}
-docker-compose up
+docker-compose build

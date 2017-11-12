@@ -1,7 +1,7 @@
 1. install the webapp
-   ./sbuild/install.sh
+   cd sbuild
+   ./install.sh
 
-2. create a docker image for the backend
-   cd cattleshed/docker
-   ./get_bin.sh
-   docker image build -t 
+2. run the web app
+   cd sbuild
+   docker-compose start
