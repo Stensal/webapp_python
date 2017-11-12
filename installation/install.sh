@@ -5,7 +5,7 @@ echo "create the build environment"
 docker image build -t webapp_docker ${mypath}
 
 echo "build the code in the build environment"
-docker run --rm -it -v ${mypath}/../../webapp:/root/webapp webapp_docker /root/webapp/sbuild/build_all.sh
+docker run --rm -it -v ${mypath}/../../webapp:/root/webapp webapp_docker /root/webapp/installation/build_all.sh
 
 echo "prepare build cattleshed execution environment"
 cd ${mypath}/../cattleshed/docker
