@@ -1,5 +1,10 @@
 Development guidelines
 
+*Goal*
+The guideline is written with the goal of achiving continues
+integration/continues deployment.
+
+
 *Development*
 
 1. Use the simplest method to implement a functionality without
@@ -13,17 +18,20 @@ most obvious implementation.
 3. If a function is too complicate to implement, stop and ask for
 clarifications.
 
-4. Ask yourself the following questions while writing your code: Can
-this code fail? If yes, in what condition.  Code could fail in very
-unexpected conditions, try to think about as many failure conditions
-as you can, but only document the unexpected/unusual cases as comments
-in the code.  If this code can fail, can we simulate the failure in
-the development environment? If not, can you implement it differently
-such that the failure can be simulated and tested?  Any local
-non-testable feature should have an unique error message with
-sufficient details.  If this code can fail in a production, how can
-you debug it?  If not, stop and discuss this issue with your
-supervisor.
+4. Ask yourself the following questions while writing your code:
+
+ i. Can this code fail? If yes, in what condition.  Code could fail in
+    very unexpected conditions, try to think about as many failure
+    conditions as you can, but only document the unexpected/unusual
+    cases as comments in the code.
+
+ ii. Can we simulate all failures in the development environment? If
+    not, can you implement it differently such that the failures can
+    be simulated and tested?  Any local non-testable features should
+    have an unique error message with sufficient details.
+
+  iii. Can you debug the failures in production? If not, stop and
+    discuss this issue with your supervisor.
 
 5. Avoid introducing new programming languages, dependencies, and
 external services. If any of the above is required to implement a
