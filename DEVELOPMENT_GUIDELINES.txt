@@ -1,0 +1,72 @@
+Development guidelines
+
+*Development*
+
+1. Use the simplest method to implement a functionality without
+sacrificing its business requirements.  All input and output of the
+functionality should have companion test data, and the functionality
+can be automatically tested with these companion test data.
+
+2. Avoid premature optimization/abstraction.  Use the simplest and
+most obvious implementation.
+
+3. If a function is too complicate to implement, stop and ask for
+clarifications.
+
+4. Ask yourself the following questions while writing your code: Can
+this code fail? If yes, in what condition.  Code could fail in very
+unexpected conditions, try to think about as many failure conditions
+as you can, but only document the unexpected/unusual cases as comments
+in the code.  If this code can fail, can we simulate the failure in
+the development environment? If not, can you implement it differently
+such that the failure can be simulated and tested?  Any local
+non-testable feature should have an unique error message with
+sufficient details.  If this code can fail in a production, how can
+you debug it?  If not, stop and discuss this issue with your
+supervisor.
+
+5. Avoid introducing new programming languages, dependencies, and
+external services. If any of the above is required to implement a
+business requirement, please seek approval.
+
+6. Parameterize application configurations. Server ip address,
+username, and password, etc. will be different in staging, and
+production environments. Please parameterize them, and provide a
+mechanism to instantiate them for different environments (development,
+staging, production)
+
+*Testing*
+
+1. All critical functionalities need to be 100% covered by
+automated regression test.
+
+2. Test coverage reports should be generated for each release.  gcov
+for C++ code Xdebug for PHP Code:
+https://xdebug.org/docs/code_coverage
+
+*Performance profiling*
+
+1. Any code you written should be profilable.
+
+2. Any tech stack/dependencies you choose should be profilable. If
+not, please raise this issue to your supervisor.
+
+3. Performance profiling should be part of the release.
+
+
+*Data safety*
+
+1. all user data(log) should be mounted as external volumes, such that
+user data can be persisted across application upgrades, and be backed
+up in external storage.
+
+2. If data migration is required for an application upgrade, all data
+migration should be done automatically. The migration script should be
+fully tested in development environment and staging environment.
+
+*Installation*
+
+1. The whole webapp can be deployed with one installation script.
+
+2. The whole webapp can be start/top thru docker-compose
+[up|start|stop]
