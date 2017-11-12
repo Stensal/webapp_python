@@ -1,8 +1,8 @@
 Development guidelines
 
 *Goal*
-The guideline is written with the goal of achiving continues
-integration/continues deployment.
+The guideline is written with the goal of achieving continuous
+integration/continuous deployment.
 
 
 *Development*
