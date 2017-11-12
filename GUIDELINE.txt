@@ -77,8 +77,11 @@ fully tested in development environment and staging environment.
 
 *Deployment*
 
-1. The whole application (including all subservices) can be deployed with one script.
+1. The whole application (including all subservices) can be deployed
+with one script.
 
-2. The whole application (including all subservices) be started/stopped thru one script. 
+2. The whole application (including all subservices) be
+started/stopped thru one script.
 
-3. Any subservices (subapps) can be deployed/started/stopped independently.
+3. Any subservices (subapps) can be deployed/started/stopped
+independently.
