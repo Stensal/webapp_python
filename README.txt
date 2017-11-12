@@ -1,7 +1,7 @@
 1. install the webapp
-   cd sbuild
+   cd installation
    ./install.sh
 
 2. run the web app
-   cd sbuild
+   cd installation
    docker-compose start
