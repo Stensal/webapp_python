@@ -11,7 +11,8 @@ services:
   stensalio:
      build: ../stensalio/docker
      volumes:
-       - "stensalio_data:/tmp"
+       - "stensalio_data:/data"
+       - "stensalio_public_json:/var/www/public_json"
      network_mode: "host"  
      command: ["/usr/bin/wait-for-it.sh", "cattleshed:2012", "/bin/bash"]
      depends_on:
@@ -20,3 +21,4 @@ services:
 volumes:
   cattleshed_workspace:
   stensalio_data:
+  stensalio_public_json:
