@@ -21,3 +21,7 @@ rm ${mypath}/../build/assembly_line/lib/libboost_*.so
 
 ${mypath}/sbuild.sh cattleshed
 ${mypath}/sbuild.sh stensalio
+
+# build cppcms php integration
+cd ${mypath}/../cppcms/contrib/integration/session/php/php5
+env CPPCMS_PATH=${mypath}/../build/assembly_line ./build_ext.sh
