@@ -1,3 +1,6 @@
+0. checkout this repo
+   git clone --recursive https://github.com/Stensal/webapp
+
 1. install the webapp
    cd installation
    ./install.sh
