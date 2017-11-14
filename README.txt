@@ -4,7 +4,7 @@
 
 2. run the web app
    cd installation
-   docker-compose start
+   docker-compose up
 
 3.  access the webapps
    a. the whole webapp
