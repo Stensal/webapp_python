@@ -3,7 +3,7 @@
 
    or
 
-   git clone --recursive https://github.com/Stensal/webapp
+   git clone https://github.com/Stensal/webapp
    git submodule init
    git submodule update
       
